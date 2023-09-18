@@ -1,0 +1,4 @@
+.selected-bar {
+    stroke: red; /* Add a red border */
+    stroke-width: 2px; /* Adjust the border width as needed */
+}

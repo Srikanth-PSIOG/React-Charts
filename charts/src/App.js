@@ -1,24 +1,22 @@
+import React from 'react';
+import BarChart from './containers/BarChartD3';
 import logo from './logo.svg';
 import './App.css';
+import { Grid } from '@mui/material';
+import LineChart from './containers/LineChartStock';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Grid container>
+        <Grid item xs={6} sx={{ padding: "50px" }}>
+          <BarChart />
+        </Grid>
+        <Grid item xs={6} sx={{ padding: "50px" }}>
+          <LineChart />
+        </Grid>
+      </Grid>
+    </React.Fragment>
   );
 }
 
